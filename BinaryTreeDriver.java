@@ -1,5 +1,5 @@
 public class BinaryTreeDriver{     
-    public static void main(String args[])  { 
+    public static void main(String args[]) throws Exception {
        // To be completed by students
             BST<Integer> tree = new BST<>();
             tree.insert(14);

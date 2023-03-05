@@ -238,26 +238,23 @@ public class BST<T extends Comparable<T>> extends BinaryTree<T> {
     //==============================================================
 
     // Task 3
-    public String getPathToLeafNode(T e){ // helper method
-        try {
+    public String getPathToLeafNode(T e) throws Exception { // helper method
             if (!search(e)) // if the element is not in the tree
                 throw new Exception("The element does not exist");
             else
                 return getPathToLeafNode(e, root);
-        }
-        catch (Exception c){
-            System.out.println(e);
-        }
-        return null; //////////////////////
+
     }
     private String getPathToLeafNode(T e, BTNode<T> node){
+        if(node == null)
+            return "";
         if(node.equals(e))
-            return " " + String.valueOf(node.data);
+            return  String.valueOf(node.data);
         else if(e.compareTo(node.data) > 0){
-            return " " + String.valueOf(node.data) + " " + getPathToLeafNode(e,node.right);
+            return String.valueOf(node.data) + " " + getPathToLeafNode(e,node.right);
         }
         else
-            return " " +  String.valueOf(node.data) + " " + getPathToLeafNode(e,node.left);
+            return String.valueOf(node.data) + " " + getPathToLeafNode(e,node.left);
     }
 
     // Task 4

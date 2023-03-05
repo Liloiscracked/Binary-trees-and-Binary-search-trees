@@ -7,9 +7,9 @@ public class BSTDriver
 		  tree.insert(array[k]);
       
     try{
-	  System.out.println("Path from root to node G is: " + tree.getPathToLeafNode("G"));
+	  System.out.println("Path from root to node G is: " + tree.getPathToLeafNode("G"));////////
     }
-    catch(IllegalArgumentException e){
+    catch(Exception e){
       System.out.println(e);
     }
       System.out.println("\nThe BST is: ");
