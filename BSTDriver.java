@@ -1,5 +1,5 @@
-public class BSTDriver
-{
+public class BSTDriver {
+    // Task 6
 	public static void main(String[] args) {
 		BST<String> tree = new BST<String>();
       String[] array = {"D", "B", "A", "C", "F", "H", "G", "J"};

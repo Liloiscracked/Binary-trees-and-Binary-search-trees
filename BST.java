@@ -273,10 +273,5 @@ public class BST<T extends Comparable<T>> extends BinaryTree<T> {
         }
         else
             return 1 + getNodeLevel(e,node.left);
-
-
     }
-
-
-
 }
